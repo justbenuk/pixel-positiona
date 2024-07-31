@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Employer extends Model
 {
     use HasFactory;
+    protected $guarded = [];
 
     public function user(): BelongsTo
     {
